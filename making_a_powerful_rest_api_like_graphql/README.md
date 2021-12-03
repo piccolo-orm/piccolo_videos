@@ -14,6 +14,12 @@ pip install -r requirements.txt
 
 See `piccolo_conf.py` for details. Then use `piccolo movies generate_data` to add some test data.
 
+### Run migrations
+
+```
+piccolo migrations forwards all
+```
+
 ### Run server
 
 ```bash
