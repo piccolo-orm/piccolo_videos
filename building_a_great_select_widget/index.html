@@ -1,0 +1,188 @@
+<html lang=en>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Select Widgets</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        div.inner {
+            max-width: 50rem;
+            margin: 2rem auto;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #f0f0f0;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inner">
+
+        <h1>HTML selector comparison</h1>
+
+        <hr />
+
+        <h2>Select</h2>
+
+        <h3>Small dataset 👍</h3>
+
+        <select name="director">
+            <option value="george">George Lucas</option>
+            <option value="peter">Peter Jackson</option>
+            <option value="steven">Steven Spielberg</option>
+        </select>
+
+        <h3>Medium to Large dataset 👎</h3>
+
+        <select name="director">
+            <option>Peter Jackson</option>
+            <option>George Lucas</option>
+            <option>J.J. Abrams</option>
+            <option>Gareth Edwards</option>
+            <option>Irvin Kershner</option>
+            <option>Richard Marquand</option>
+            <option>Rian Johnson</option>
+            <option>Ron Howard</option>
+            <option>Mr. Eric Richard MD</option>
+            <option>Heather Swanson</option>
+            <option>Michael Brown</option>
+            <option>Matthew Allen</option>
+            <option>Christopher Marshall</option>
+            <option>Linda Jones</option>
+            <option>John Nelson</option>
+            <option>Darin Cook</option>
+            <option>Michelle James</option>
+            <option>Joshua Ramirez Jr.</option>
+            <option>Kimberly Ward</option>
+            <option>Erica Baxter</option>
+            <option>Amy Mckee</option>
+            <option>Kyle Spencer</option>
+            <option>Amber Hughes</option>
+            <option>Jerry Martin</option>
+            <option>Jacob Ruiz</option>
+            <option>Misty Walker</option>
+            <option>Connor Potter</option>
+            <option>Mark Stout</option>
+            <option>Jasmine York</option>
+            <option>Steven Owens</option>
+            <option>Nicholas Barrera</option>
+            <option>Cynthia Brewer</option>
+            <option>Travis Martinez</option>
+            <option>Mary Massey Jr.</option>
+            <option>Christina Johnson</option>
+            <option>Michael Harvey</option>
+            <option>Marc James</option>
+            <option>Michael Parks</option>
+            <option>Sarah Hughes</option>
+            <option>Dr. Justin Carroll</option>
+            <option>James Smith</option>
+            <option>Stephanie Herman</option>
+            <option>Duane Anderson</option>
+            <option>Katherine Robinson</option>
+            <option>Bruce Sweeney</option>
+            <option>Angela Smith</option>
+            <option>Jessica Smith</option>
+            <option>Blake Glover</option>
+            <option>Jennifer Smith</option>
+            <option>Rachel Goodman</option>
+            <option>Kimberly Orozco</option>
+            <option>Ruben Mcdaniel</option>
+            <option>Robin Martin</option>
+            <option>Andrew Burns</option>
+            <option>Joshua Stephenson</option>
+            <option>Andrew Bryant</option>
+            <option>Jordan Ryan MD</option>
+            <option>Brittany Williams</option>
+        </select>
+
+        <hr />
+
+        <h2>Datalist</h2>
+
+        <h3>Small to Medium dataset 👍</h3>
+
+        <input list="director_list" name="director_2" />
+
+        <datalist id="director_list">
+            <option value="Peter Jackson">
+            <option value="George Lucas">
+            <option value="J.J. Abrams">
+            <option value="Gareth Edwards">
+            <option value="Irvin Kershner">
+            <option value="Richard Marquand">
+            <option value="Rian Johnson">
+            <option value="Ron Howard">
+            <option value="Mr. Eric Richard MD">
+            <option value="Heather Swanson">
+            <option value="Michael Brown">
+            <option value="Matthew Allen">
+            <option value="Christopher Marshall">
+            <option value="Linda Jones">
+            <option value="John Nelson">
+            <option value="Darin Cook">
+            <option value="Michelle James">
+            <option value="Joshua Ramirez Jr.">
+            <option value="Kimberly Ward">
+            <option value="Erica Baxter">
+            <option value="Amy Mckee">
+            <option value="Kyle Spencer">
+            <option value="Amber Hughes">
+            <option value="Jerry Martin">
+            <option value="Jacob Ruiz">
+            <option value="Misty Walker">
+            <option value="Connor Potter">
+            <option value="Mark Stout">
+            <option value="Jasmine York">
+            <option value="Steven Owens">
+            <option value="Nicholas Barrera">
+            <option value="Cynthia Brewer">
+            <option value="Travis Martinez">
+            <option value="Mary Massey Jr.">
+            <option value="Christina Johnson">
+            <option value="Michael Harvey">
+            <option value="Marc James">
+            <option value="Michael Parks">
+            <option value="Sarah Hughes">
+            <option value="Dr. Justin Carroll">
+            <option value="James Smith">
+            <option value="Stephanie Herman">
+            <option value="Duane Anderson">
+            <option value="Katherine Robinson">
+            <option value="Bruce Sweeney">
+            <option value="Angela Smith">
+            <option value="Jessica Smith">
+            <option value="Blake Glover">
+            <option value="Jennifer Smith">
+            <option value="Rachel Goodman">
+            <option value="Kimberly Orozco">
+            <option value="Ruben Mcdaniel">
+            <option value="Robin Martin">
+            <option value="Andrew Burns">
+            <option value="Joshua Stephenson">
+            <option value="Andrew Bryant">
+            <option value="Jordan Ryan MD">
+            <option value="Brittany Williams">
+        </datalist>
+
+        <hr />
+
+        <h2>Search</h2>
+
+        <h3>Large dataset 👍</h3>
+
+        <input type="search" placeholder="search" />
+    </div>
+
+</body>
+
+</html>
