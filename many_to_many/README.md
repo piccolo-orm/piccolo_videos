@@ -1,21 +1,13 @@
-# m2m_demo
+# Many-To-Many Demo
 
-## Setup
+First create the database with the credentials given in `piccolo_conf.py`.
 
-### Install requirements
+Then run the following:
 
 ```bash
 pip install -r requirements.txt
-```
-
-### Getting started guide
-
-```bash
+piccolo migrations forwards all
+piccolo music load_data
+piccolo user create
 python main.py
-```
-
-### Running tests
-
-```bash
-piccolo tester run
 ```
