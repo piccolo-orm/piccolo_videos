@@ -18,6 +18,11 @@ app = FastAPI(
 )
 
 
-@app.get("/")
+@app.get("/bands/")
 async def bands():
     return await Band.select(Band.name, Band.genres(Genre.name, as_list=True))
+
+
+@app.get("/genres/")
+async def genres():
+    return await Genre.select(Genre.name, Genre.bands(Band.name, as_list=True))
