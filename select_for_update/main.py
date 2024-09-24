@@ -46,7 +46,7 @@ async def main():
     )
     await concert.save()
 
-    await asyncio.gather(*[book_tickets(20) for i in range(10)])
+    await asyncio.gather(*[book_tickets(20) for _ in range(10)])
 
     await concert.refresh()
     print(concert.tickets_available)
